@@ -8,7 +8,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from modules.Detect import Detect
+from modules.Detection.Detect import Detect
 from modules.Detection.model import Model
 from utils.downloads import attempt_download
 

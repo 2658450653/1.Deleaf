@@ -1,0 +1,10 @@
+controller:
+  # basic root: cfg/controller/
+  cfg_path:   detection
+  cfg:        yolov5m_controller
+
+backbone:
+  # basic root: cfg/backbone/
+  cfg_path:   detection
+  cfg:        yolov5_backbone
+

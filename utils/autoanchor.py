@@ -11,8 +11,7 @@ import yaml
 from tqdm import tqdm
 
 from utils.general import LOGGER, colorstr, emojis
-from utils.rboxs_utils import pi, poly2rbox, regular_theta
-import cv2
+from utils.rboxs_utils import poly2rbox
 
 PREFIX = colorstr('AutoAnchor: ')
 

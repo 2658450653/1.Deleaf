@@ -108,7 +108,7 @@ class SSEBlender(nn.Module):
         self.d = dimension
         self.attes = nn.ModuleList([ChannelAttention(c) for c in channels])
         self._local_fusion = Smoother()
-        self.msb = MultiScaleBalance()
+        self.msb = MultiScaleBalanceV2()
         self.FNF = FastNormFusion()
 
     def forward(self, x):

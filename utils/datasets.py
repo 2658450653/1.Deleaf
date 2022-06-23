@@ -27,7 +27,7 @@ from tqdm import tqdm
 
 from utils.augmentations import Albumentations, augment_hsv, copy_paste, letterbox, mixup, random_perspective
 from utils.general import (LOGGER, NUM_THREADS, check_dataset, check_requirements, check_yaml, clean_str,
-                           segments2boxes, xyn2xy, xywh2xyxy, xywhn2xyxy, xyxy2xywhn)
+                           xyn2xy, xywh2xyxy)
 from utils.torch_utils import torch_distributed_zero_first
 from utils.rboxs_utils import poly_filter, poly2rbox
 
