@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="lzw@172.27.54.47:22 (3)" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" serverName="lzw@172.27.54.47:22 (2)" remoteFilesAllowedToDisappearOnAutoupload="false" autoUploadExternalChanges="true">
     <serverData>
       <paths name="lzw@10.101.241.6:22">
         <serverdata>
@@ -19,7 +19,7 @@
       <paths name="lzw@172.27.54.47:22 (2)">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/DATA/lzw/CLassifier/Deleaf" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
