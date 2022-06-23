@@ -92,3 +92,15 @@ class GhostConv(nn.Module):
         y = self.cv1(x)
         return torch.cat([y, self.cv2(y)], 1)
 
+class TransConv(nn.Module):
+    def __init__(self, channelIn, channelOut=None, c_ratio=16):
+        super(TransConv, self).__init__()
+        self.confuse = nn.Conv2d(channelIn, channelIn, 1, bias=False)
+        self.tcov = nn.ConvTranspose2d(channelIn, channelIn, kernel_size=4, stride=2, padding=1)
+        self.bn = nn.BatchNorm2d(channelIn)
+
+    def forward(self, x):
+        x = self.confuse(x)
+        x = self.tcov(x)
+        x = self.bn(x)
+        return x
